@@ -1,4 +1,4 @@
-# yaConverter
+# yaConverter for PHP / DevelNext
 The PHP extension for easy measurements convertions just with one function. Almost all known units supported! Works with DevelNext.
 
 What is yaConverter?
@@ -8,20 +8,19 @@ You're at the main page of yaConverter and you just found the good way! yaConver
 How do I install it?
 -----
 1. Download needed version.
-2. Connect extension to code file, where you want to use it: look "Installation.md" in your selected Branch, installation may vary.
+2. Connect extension to code file, where you want to use it: look "Installation.md".
 
 How do I use it?
 -----
-Look at the Wiki or check out "Usage.md" in your selected Branch, usage may vary in different languages.
+Look at the Wiki or check out "Usage.md".
 
 Supported units and functions:
 -----
 Check the Wiki.
 
 Downloads:
-=====
-- PHP/DevelNext: soon
-- Java: soon
+-----
+Soon.
 
 Credits:
 -----
