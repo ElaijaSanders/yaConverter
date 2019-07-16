@@ -3,7 +3,7 @@ The PHP extension for easy measurements convertions just with one function. Almo
 
 What is yaConverter?
 -----
-yaConverter is extension for PHP programmers that allows you to simply convert almost all known units in the world by using very simple and adjustable functions. You can even convert one unit to two! For example: Feet to Miles and Yards. No composer needed to install, just move folder to your project. Good luck and thanks for choosing yaConverter! :D
+You're at the main page of yaConverter and you just found the good way! yaConverter is extension for PHP programmers that allows you to simply convert almost all known units in the world by using very simple and adjustable functions. You can even convert one unit to two! For example: Feet to Miles and Yards. No composer needed to install, just move folder to your project. Good luck and thanks for choosing yaConverter! :D
 
 How do I install it?
 -----
@@ -19,7 +19,7 @@ Supported units and functions:
 Check the Wiki.
 
 Downloads:
------
+=====
 - PHP/DevelNext: soon
 - Java: soon
 
