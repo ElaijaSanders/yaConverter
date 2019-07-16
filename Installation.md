@@ -1,7 +1,7 @@
 # Installation for PHP / DevelNext
 
 1. Head to the "Downloads" and download your prefered version
-2. Move "yaConverter" folder to the root directory of your PHP / DevelNext project
+2. Unpack "yaConverter" folder from the .zip file to the root directory of your PHP / DevelNext project
 3. Open code file, where you want to use yaConverter
 
 If you use standard PHP:
