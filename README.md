@@ -13,9 +13,8 @@ How do I use it and what units are supported?
 -----
 [Usage in PHP](Usage.md)
 
-Downloads:
------
-Soon.
+[Downloads](https://github.com/yaBobJonez/yaConverter/releases/tag/php)
+---
 
 Credits:
 -----
