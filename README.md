@@ -17,7 +17,7 @@ How do I use it and what units are supported?
 
 Downloads:
 =====
-- PHP/DevelNext: [Last release](https://github.com/yaBobJonez/yaConverter/tree/php)
+- PHP/DevelNext: [Last release](https://github.com/yaBobJonez/yaConverter/releases/tag/php)
 - Java: coming soon
 
 Credits:
