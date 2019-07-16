@@ -9,13 +9,9 @@ How do I install it?
 -----
 [Installation instructions](Installation.md)
 
-How do I use it?
+How do I use it and what units are supported?
 -----
-Look at the Wiki or check out "Usage.md".
-
-Supported units and functions:
------
-Check the Wiki.
+[Usage in PHP](Usage.md)
 
 Downloads:
 -----
