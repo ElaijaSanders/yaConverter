@@ -20,8 +20,8 @@ Check the Wiki.
 
 Downloads:
 -----
-• PHP/DevelNext: soon.
-• Java: soon.
+- PHP/DevelNext: soon
+- Java: soon
 
 Credits:
 -----
