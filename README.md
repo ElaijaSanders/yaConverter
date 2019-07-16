@@ -7,8 +7,7 @@ You're at the main page of yaConverter and you just found the good way! yaConver
 
 How do I install it?
 -----
-1. Download needed version.
-2. Connect extension to code file, where you want to use it: look "Installation.md".
+[[Installation]]
 
 How do I use it?
 -----
