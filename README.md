@@ -7,7 +7,7 @@ You're at the main page of yaConverter and you just found the good way! yaConver
 
 How do I install it?
 -----
-[[Installation]]
+[Installation instructions](Installation.md)
 
 How do I use it?
 -----
