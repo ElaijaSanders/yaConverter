@@ -10,7 +10,7 @@ echo $outputs["feet"]." ft and ".$outputs["inches"]." inches.";
 ```
 > Output: 5 ft and 3 inches.
 
-The above code is example of function, which converts centimeters to feet and inches.
+The above code is example of function in PHP, which converts centimeters to feet and inches.
 This function is not available yet, but a lot of others already do!
 
 Features:
