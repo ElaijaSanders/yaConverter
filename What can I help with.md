@@ -124,4 +124,61 @@ Things, which already done are ticked.
 - [X] CuInToQt
 - [X] QtToCuIn
 
+- [X] FlOzToPt
+- [X] PtToFlOz
+- [X] PtToQt
+- [X] QtToPt
+
+- [X] PtToGal
+- [X] GalToPt
+- [X] CuFtToFlOz
+- [X] FlOzToCuFt
+
+- [X] CuFtToPt
+- [X] PtToCuFt
+- [X] CuFtToQt
+- [X] QtToCuFt
+
+- [X] FlOzToQt
+- [X] QtToFlOz
+- [X] FlOzToGal
+- [X] GalToFlOz
+
+- [X] QtToGal
+- [X] GalToQt
+- [X] CuYdToGal
+- [X] GalToCuYd
+
+- [X] CuYdToFlOz
+- [X] FlOzToCuYd
+- [X] CuYdToPt
+- [X] PtToCuYd
+
+- [X] CuYdToQt
+- [X] QtToCuYd
+
+- [X] FtInToFt
+- [X] FtInToYd
+- [X] FtInToMi
+
+- [X] YdInToFt
+- [X] YdInToYd
+- [X] YdInToMi
+
+- [X] YdFtToIn
+- [X] YdFtToYd
+- [X] YdFtToMi
+
+- [X] MiInToFt
+- [X] MiInToYd
+- [X] MiInToMi
+
+- [X] MiFtToIn
+- [X] MiFtToYd
+- [X] MiFtToMi
+
+- [X] MiYdToIn
+- [X] MiYdToFt
+- [X] MiYdToMi
+
 - [X] 
