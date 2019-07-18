@@ -4,6 +4,14 @@ The PHP extension for easy measurements convertions just with one function. Almo
 What is yaConverter?
 -----
 You're at the main page of yaConverter and you just found the good way! yaConverter is extension for PHP programmers that allows you to simply convert almost all known units in the world by using very simple and adjustable functions. You can even convert one unit to two! For example: Feet to Miles and Yards. No composer needed to install, just move folder to your project. Good luck and thanks for choosing yaConverter! :D
+```php
+$outputs = InterUnits::CmToFtIn(160);
+echo $outputs["feet"]." ft and ".$outputs["inches"]." inches.";
+```
+> Output: 5 ft and 3 inches.
+
+The above code is example of function in PHP, which converts centimeters to feet and inches.
+This function is not available yet, but a lot of others already do!
 
 How do I install it?
 -----
