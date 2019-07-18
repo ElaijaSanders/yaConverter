@@ -31,13 +31,4 @@ Please, credit all the authors if redistributing any part of the project.
 
 How can I help / collaborate?
 -----
-Yes, you can help developing by writing / editing code. Also, you can suggest missed language support or function.
-To edit code:
-1. Fork this project by clicking "Fork" at the top right
-2. Select Branch (same with programming language name) you want to help with
-3. Go to "/yaConverter" folder
-4. Select file you would like to edit or create new
-5. Click "Edit" (small pencil icon) and make edits
-6. Open pull request to merge with exiting code
-If I will accept edits, them will be merged into the project and will be available.
-Good luck! ;)
+Yes, you can help developing by writing / editing code. Also, you can suggest missed language support or function. Just open a pull request for me. If I will accept edits, them will be merged into the project and will be available. Good luck! ;)
