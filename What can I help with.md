@@ -7,8 +7,8 @@ another language.
 
 ## What do we need?
 
-- [X]PHP
-- [ ]Java
-- [ ]C++
-- [ ]python
-- [ ]Ruby
+- [X] PHP
+- [ ] Java
+- [ ] C++
+- [ ] python
+- [ ] Ruby
