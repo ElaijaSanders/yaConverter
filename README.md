@@ -1,4 +1,6 @@
 # yaConverter
+![https://ci.appveyor.com/api/projects/status/github/yaBobJonez/yaConverter?svg=true](https://ci.appveyor.com/api/projects/status/github/yaBobJonez/yaConverter?svg=true) [![Coverage Status](https://coveralls.io/repos/github/yaBobJonez/yaConverter/badge.svg?branch=Standard)](https://coveralls.io/github/yaBobJonez/yaConverter?branch=Standard)
+
 The multilingual programmers' extension for easy measurements conversions just with one function. Almost all known units supported!
 
 What is yaConverter?
