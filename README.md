@@ -1,5 +1,12 @@
 # yaConverter
-![https://ci.appveyor.com/api/projects/status/github/yaBobJonez/yaConverter?svg=true](https://ci.appveyor.com/api/projects/status/github/yaBobJonez/yaConverter?svg=true) [![Coverage Status](https://coveralls.io/repos/github/yaBobJonez/yaConverter/badge.svg?branch=Standard)](https://coveralls.io/github/yaBobJonez/yaConverter?branch=Standard)
+![BuildStatus](https://img.shields.io/appveyor/ci/yaBobJonez/yaConverter)
+![CodeQuality](https://img.shields.io/scrutinizer/quality/g/yaBobJonez/yaConverter)
+![LastCommit](https://img.shields.io/github/last-commit/yaBobJonez/yaConverter)
+![OpenIssues](https://img.shields.io/github/issues/yaBobJonez/yaConverter)
+![Maintenance](https://img.shields.io/maintenance/yes/2025)
+![CodeSize](https://img.shields.io/github/languages/code-size/yaBobJonez/yaConverter)
+![DownloadsTotal](https://img.shields.io/github/downloads/yaBobJonez/yaConverter/total)
+![License](https://badgen.net/badge/license/DERL/green)
 
 The multilingual programmers' extension for easy measurements conversions just with one function. Almost all known units supported!
 
@@ -41,8 +48,9 @@ Or check our wiki!
 
 Downloads:
 =====
-- PHP/DevelNext: [Last release](https://github.com/yaBobJonez/yaConverter/releases/tag/php)
-- Java: coming soon
+Click on the icon to download.
+- [![PHP](https://badgen.net/badge/PHP/0.9/green)](https://github.com/yaBobJonez/yaConverter/releases/tag/php)
+- [![PHP](https://badgen.net/badge/Java/Coming%20soon/red)](#)
 
 Credits:
 -----
