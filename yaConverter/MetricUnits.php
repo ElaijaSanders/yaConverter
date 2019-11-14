@@ -1,4 +1,4 @@
-<?
+<?php
 namespace yaConverter;
 
 class MetricUnits {
