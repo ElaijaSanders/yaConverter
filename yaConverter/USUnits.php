@@ -29,7 +29,7 @@ class USUnits {
 		$inches = ($feet * 12) + $inches;
 		return $inches;
 	} public static function FtToIn($feet, $inches = 0) {
-		FtInToIn($feet, $inches);
+		return self::FtInToIn($feet, $inches);
 	} public static function InToYdIn($inches) {
 		$yards = floor($inches / 36);
 		$inches = $inches % 36;
@@ -41,7 +41,7 @@ class USUnits {
 		$inches = ($yards * 36) + $inches;
 		return $inches;
 	} public static function YdToIn($yards, $inches = 0) {
-		YdInToIn($yards, $inches);
+		return self::YdInToIn($yards, $inches);
 	} public static function InToMiIn($inches) {
 		$miles = floor($inches / 63360);
 		$inches = $inches % 63360;
@@ -53,7 +53,7 @@ class USUnits {
 		$inches = ($miles * 63360) + $inches;
 		return $inches;
 	} public static function MiToIn($miles, $inches = 0) {
-		MiInToIn($miles, $inches);
+		return self::MiInToIn($miles, $inches);
 	}
 	
 	//Feet - yards, feet - miles
@@ -75,12 +75,12 @@ class USUnits {
 		$feet = ($miles * 5280) + $feet;
 		return $feet;
 	} public static function MiToFt($miles, $feet = 0) {
-		MiFtToFt($miles, $feet);
+		return self::MiFtToFt($miles, $feet);
 	} public static function YdFtToFt($yards, $feet = 0) {
 		$feet = ($yards * 3) + $feet;
 		return $feet;
 	} public static function YdToFt($yards, $feet = 0) {
-		YdFtToFt($yards, $feet);
+		return self::YdFtToFt($yards, $feet);
 	}
 	
 	//Yards - miles
@@ -95,7 +95,7 @@ class USUnits {
 		$yards = ($miles * 1760) + $yards;
 		return $yards;
 	} public static function MiToYd($miles, $yards = 0) {
-		MiYdToYd($miles, $yards);
+		return self::MiYdToYd($miles, $yards);
 	}
 	
 	//Ounces - pounds, ounces - stones, ounces - tons
@@ -110,7 +110,7 @@ class USUnits {
 		$ounces = ($pounds * 16) + $ounces;
 		return $ounces;
 	} public static function LbToOz($pounds, $ounces = 0) {
-		LbOzToOz($pounds, $ounces);
+		return self::LbOzToOz($pounds, $ounces);
 	} public static function OzToStOz($ounces) {
 		$stones = floor($ounces / 224);
 		$ounces = $ounces % 224;
@@ -122,7 +122,7 @@ class USUnits {
 		$ounces = ($stones * 224) + $ounces;
 		return $ounces;
 	} public static function StToOz($stones, $ounces = 0) {
-		StOzToOz($stones, $ounces);
+		return self::StOzToOz($stones, $ounces);
 	} public static function OzToTOz($ounces) {
 		$tons = floor($ounces / 32000);
 		$ounces = $ounces % 32000;
@@ -134,7 +134,7 @@ class USUnits {
 		$ounces = ($tons * 32000) + $ounces;
 		return $ounces;
 	} public static function TToOz($tons, $ounces = 0) {
-		TOzToOz($tons, $ounces);
+		return self::TOzToOz($tons, $ounces);
 	}
 	
 	//Pounds - stones, short tons - stones
@@ -149,7 +149,7 @@ class USUnits {
 		$pounds = ($stones * 14) + $pounds;
 		return $pounds;
 	} public static function StToLb($stones, $pounds = 0) {
-		StLbToLb($stones, $pounds);
+		return self::StLbToLb($stones, $pounds);
 	} public static function StToTSt($stones) {
 		$tons = floor($stones / 142.8571);
 		$stones = $stones % 142.8571;
@@ -161,7 +161,7 @@ class USUnits {
 		$stones = ($tons * 142.8571) + $stones;
 		return $stones;
 	} public static function TToSt($tons, $stones = 0) {
-		TStToSt($tons, $stones);
+		return self::TStToSt($tons, $stones);
 	}
 	
 	//Pounds - short tons
@@ -176,7 +176,7 @@ class USUnits {
 		$pounds = ($tons * 2000) + $pounds;
 		return $pounds;
 	} public static function TToLb($tons, $pounds = 0) {
-		TLbToLb($tons, $pounds);
+		return self::TLbToLb($tons, $pounds);
 	}
 	
 	//Feet per second - miles per hour, feet per second - knots
@@ -417,80 +417,80 @@ class USUnits {
 	}
 	
 	//More Lenght:
-	public static function FtInToFt($feet, $inches = 0) { InToFt(FtInToIn($feet, $inches)); }
-	public static function FtInToYd($feet, $inches = 0) { InToYd(FtInToIn($feet, $inches)); }
-	public static function FtInToMi($feet, $inches = 0) { InToMi(FtInToIn($feet, $inches)); }
-	public static function YdInToFt($yards, $inches = 0) { InToFt(YdInToIn($yards, $inches)); }
-	public static function YdInToYd($yards, $inches = 0) { InToYd(YdInToIn($yards, $inches)); }
-	public static function YdInToMi($yards, $inches = 0) { InToMi(YdInToIn($yards, $inches)); }
-	public static function YdFtToIn($yards, $feet = 0) { FtToIn(YdFtToFt($yards, $feet)); }
-	public static function YdFtToYd($yards, $feet = 0) { FtToYd(YdFtToFt($yards, $feet)); }
-	public static function YdFtToMi($yards, $feet = 0) { FtToMi(YdFtToFt($yards, $feet)); }
-	public static function MiInToFt($miles, $inches = 0) { InToFt(MiInToIn($miles, $inches)); }
-	public static function MiInToYd($miles, $inches = 0) { InToYd(MiInToIn($miles, $inches)); }
-	public static function MiInToMi($miles, $inches = 0) { InToMi(MiInToIn($miles, $inches)); }
-	public static function MiFtToIn($miles, $feet = 0) { FtToIn(MiFtToFt($miles, $feet)); }
-	public static function MiFtToYd($miles, $feet = 0) { FtToYd(MiFtToFt($miles, $feet)); }
-	public static function MiFtToMi($miles, $feet = 0) { FtToMi(MiFtToFt($miles, $feet)); }
-	public static function MiYdToIn($miles, $yards	= 0) { YdToIn(MiYdToYd($miles, $yards)); }
-	public static function MiYdToFt($miles, $yards	= 0) { YdToFt(MiYdToYd($miles, $yards)); }
-	public static function MiYdToMi($miles, $yards	= 0) { YdToMi(MiYdToYd($miles, $yards)); }
+	public static function FtInToFt($feet, $inches = 0) { return self::InToFt(self::FtInToIn($feet, $inches)); }
+	public static function FtInToYd($feet, $inches = 0) { return self::InToYd(self::FtInToIn($feet, $inches)); }
+	public static function FtInToMi($feet, $inches = 0) { return self::InToMi(self::FtInToIn($feet, $inches)); }
+	public static function YdInToFt($yards, $inches = 0) { return self::InToFt(self::YdInToIn($yards, $inches)); }
+	public static function YdInToYd($yards, $inches = 0) { return self::InToYd(self::YdInToIn($yards, $inches)); }
+	public static function YdInToMi($yards, $inches = 0) { return self::InToMi(self::YdInToIn($yards, $inches)); }
+	public static function YdFtToIn($yards, $feet = 0) { return self::FtToIn(self::YdFtToFt($yards, $feet)); }
+	public static function YdFtToYd($yards, $feet = 0) { return self::FtToYd(self::YdFtToFt($yards, $feet)); }
+	public static function YdFtToMi($yards, $feet = 0) { return self::FtToMi(self::YdFtToFt($yards, $feet)); }
+	public static function MiInToFt($miles, $inches = 0) { return self::InToFt(self::MiInToIn($miles, $inches)); }
+	public static function MiInToYd($miles, $inches = 0) { return self::InToYd(self::MiInToIn($miles, $inches)); }
+	public static function MiInToMi($miles, $inches = 0) { return self::InToMi(self::MiInToIn($miles, $inches)); }
+	public static function MiFtToIn($miles, $feet = 0) { return self::FtToIn(self::MiFtToFt($miles, $feet)); }
+	public static function MiFtToYd($miles, $feet = 0) { return self::FtToYd(self::MiFtToFt($miles, $feet)); }
+	public static function MiFtToMi($miles, $feet = 0) { return self::FtToMi(self::MiFtToFt($miles, $feet)); }
+	public static function MiYdToIn($miles, $yards	= 0) { return self::YdToIn(self::MiYdToYd($miles, $yards)); }
+	public static function MiYdToFt($miles, $yards	= 0) { return self::YdToFt(self::MiYdToYd($miles, $yards)); }
+	public static function MiYdToMi($miles, $yards	= 0) { return self::YdToMi(self::MiYdToYd($miles, $yards)); }
 	
-	public static function FtToFtIn($feet) { InToFtIn(FtToIn($feet)); }
-	public static function YdToFtIn($yards) { InToFtIn(YdToIn($yards)); }
-	public static function MiToFtIn($miles) { InToFtIn(MiToIn($miles)); }
-	public static function FtToYdIn($feet) { InToYdIn(FtToIn($feet)); }
-	public static function YdToYdIn($yards) { InToYdIn(YdToIn($yards)); }
-	public static function MiToYdIn($miles) { InToYdIn(MiToIn($miles)); }
-	public static function InToYdFt($inches) { FtToYdFt(InToFt($inches)); }
-	public static function YdToYdFt($yards) { FtToYdFt(YdToFt($yards)); }
-	public static function MiToYdFt($miles) { FtToYdFt(MiToFt($miles)); }
-	public static function FtToMiIn($feet) { InToMiIn(FtToIn($feet)); }
-	public static function YdToMiIn($yards) { InToMiIn(YdToIn($yards)); }
-	public static function MiToMiIn($miles) { InToMiIn(MiToIn($miles)); }
-	public static function InToMiFt($inches) { FtToMiFt(InToFt($inches)); }
-	public static function YdToMiFt($yards) { FtToMiFt(YdToFt($yards)); }
-	public static function MiToMiFt($miles) { FtToMiFt(MiToFt($miles)); }
-	public static function InToMiYd($inches) { YdToMiYd(InToYd($inches)); }
-	public static function FtToMiYd($feet) { YdToMiYd(FtToYd($feet)); }
-	public static function MiToMiYd($miles) { YdToMiYd(MiToYd($miles)); }
+	public static function FtToFtIn($feet) { return self::InToFtIn(self::FtToIn($feet)); }
+	public static function YdToFtIn($yards) { return self::InToFtIn(self::YdToIn($yards)); }
+	public static function MiToFtIn($miles) { return self::InToFtIn(self::MiToIn($miles)); }
+	public static function FtToYdIn($feet) { return self::InToYdIn(self::FtToIn($feet)); }
+	public static function YdToYdIn($yards) { return self::InToYdIn(self::YdToIn($yards)); }
+	public static function MiToYdIn($miles) { return self::InToYdIn(self::MiToIn($miles)); }
+	public static function InToYdFt($inches) { return self::FtToYdFt(self::InToFt($inches)); }
+	public static function YdToYdFt($yards) { return self::FtToYdFt(self::YdToFt($yards)); }
+	public static function MiToYdFt($miles) { return self::FtToYdFt(self::MiToFt($miles)); }
+	public static function FtToMiIn($feet) { return self::InToMiIn(self::FtToIn($feet)); }
+	public static function YdToMiIn($yards) { return self::InToMiIn(self::YdToIn($yards)); }
+	public static function MiToMiIn($miles) { return self::InToMiIn(self::MiToIn($miles)); }
+	public static function InToMiFt($inches) { return self::FtToMiFt(self::InToFt($inches)); }
+	public static function YdToMiFt($yards) { return self::FtToMiFt(self::YdToFt($yards)); }
+	public static function MiToMiFt($miles) { return self::FtToMiFt(self::MiToFt($miles)); }
+	public static function InToMiYd($inches) { return self::YdToMiYd(self::InToYd($inches)); }
+	public static function FtToMiYd($feet) { return self::YdToMiYd(self::FtToYd($feet)); }
+	public static function MiToMiYd($miles) { return self::YdToMiYd(self::MiToYd($miles)); }
 	
 	//More Weight:
-	public static function LbOzToLb($pounds, $ounces = 0) { OzToLb(LbOzToOz($pounds, $ounces)); }
-	public static function LbOzToSt($pounds, $ounces = 0) { OzToSt(LbOzToOz($pounds, $ounces)); }
-	public static function LbOzToT($pounds, $ounces = 0) { OzToT(LbOzToOz($pounds, $ounces)); }
-	public static function StOzToLb($stones, $ounces = 0) { OzToLb(StOzToOz($stones, $ounces)); }
-	public static function StOzToSt($stones, $ounces = 0) { OzToSt(StOzToOz($stones, $ounces)); }
-	public static function StOzToT($stones, $ounces = 0) { OzToT(StOzToOz($stones, $ounces)); }
-	public static function StLbToOz($stones, $pounds = 0) { LbToOz(StLbToLb($stones, $pounds)); }
-	public static function StLbToSt($stones, $pounds = 0) { LbToSt(StLbToLb($stones, $pounds)); }
-	public static function StLbToT($stones, $pounds = 0) { LbToT(StLbToLb($stones, $pounds)); }
-	public static function TOzToLb($tons, $ounces = 0) { OzToLb(TOzToOz($tons, $ounces)); }
-	public static function TOzToSt($tons, $ounces = 0) { OzToSt(TOzToOz($tons, $ounces)); }
-	public static function TOzToT($tons, $ounces = 0) { OzToT(TOzToOz($tons, $ounces)); }
-	public static function TLbToOz($tons, $pounds = 0) { LbToOz(TLbToLb($tons, $pounds)); }
-	public static function TLbToSt($tons, $pounds = 0) { LbToSt(TLbToLb($tons, $pounds)); }
-	public static function TLbToT($tons, $pounds = 0) { LbToT(TLbToLb($tons, $pounds)); }
-	public static function TStToOz($tons, $stones = 0) { StToOz(TStToSt($tons, $stones)); }
-	public static function TStToLb($tons, $stones = 0) { StToLb(TStToSt($tons, $stones)); }
-	public static function TStToT($tons, $stones = 0) { StToT(TStToSt($tons, $stones)); }
+	public static function LbOzToLb($pounds, $ounces = 0) { return self::OzToLb(self::LbOzToOz($pounds, $ounces)); }
+	public static function LbOzToSt($pounds, $ounces = 0) { return self::OzToSt(self::LbOzToOz($pounds, $ounces)); }
+	public static function LbOzToT($pounds, $ounces = 0) { return self::OzToT(self::LbOzToOz($pounds, $ounces)); }
+	public static function StOzToLb($stones, $ounces = 0) { return self::OzToLb(self::StOzToOz($stones, $ounces)); }
+	public static function StOzToSt($stones, $ounces = 0) { return self::OzToSt(self::StOzToOz($stones, $ounces)); }
+	public static function StOzToT($stones, $ounces = 0) { return self::OzToT(self::StOzToOz($stones, $ounces)); }
+	public static function StLbToOz($stones, $pounds = 0) { return self::LbToOz(self::StLbToLb($stones, $pounds)); }
+	public static function StLbToSt($stones, $pounds = 0) { return self::LbToSt(self::StLbToLb($stones, $pounds)); }
+	public static function StLbToT($stones, $pounds = 0) { return self::LbToT(self::StLbToLb($stones, $pounds)); }
+	public static function TOzToLb($tons, $ounces = 0) { return self::OzToLb(self::TOzToOz($tons, $ounces)); }
+	public static function TOzToSt($tons, $ounces = 0) { return self::OzToSt(self::TOzToOz($tons, $ounces)); }
+	public static function TOzToT($tons, $ounces = 0) { return self::OzToT(self::TOzToOz($tons, $ounces)); }
+	public static function TLbToOz($tons, $pounds = 0) { return self::LbToOz(self::TLbToLb($tons, $pounds)); }
+	public static function TLbToSt($tons, $pounds = 0) { return self::LbToSt(self::TLbToLb($tons, $pounds)); }
+	public static function TLbToT($tons, $pounds = 0) { return self::LbToT(self::TLbToLb($tons, $pounds)); }
+	public static function TStToOz($tons, $stones = 0) { return self::StToOz(self::TStToSt($tons, $stones)); }
+	public static function TStToLb($tons, $stones = 0) { return self::StToLb(self::TStToSt($tons, $stones)); }
+	public static function TStToT($tons, $stones = 0) { return self::StToT(self::TStToSt($tons, $stones)); }
 	
-	public static function LbToLbOz($pounds) { OzToLbOz(LbToOz($pounds)); }
-	public static function StToLbOz($stones) { OzToLbOz(StToOz($stones)); }
-	public static function TToLbOz($tons) { OzToLbOz(TToOz($tons)); }
-	public static function LbToStOz($pounds) { OzToStOz(LbToOz($pounds)); }
-	public static function StToStOz($stones) { OzToStOz(StToOz($stones)); }
-	public static function TToStOz($tons) { OzToStOz(TToOz($tons)); }
-	public static function OzToStLb($ounces) { LbToStLb(OzToLb($ounces)); }
-	public static function StToStLb($stones) { LbToStLb(StToLb($stones)); }
-	public static function TToStLb($tons) { LbToStLb(TToLb($tons)); }
-	public static function LbToTOz($pounds) { OzToTOz(LbToOz($pounds)); }
-	public static function StToTOz($stones) { OzToTOz(StToOz($stones)); }
-	public static function TToTOz($tons) { OzToTOz(TToOz($tons)); }
-	public static function OzToTLb($ounces) { LbToTLb(OzToLb($ounces)); }
-	public static function StToTLb($stones) { LbToTLb(StToLb($stones)); }
-	public static function TToTLb($tons) { LbToTLb(TToLb($tons)); }
-	public static function OzToTSt($ounces) { StToTSt(OzToSt($ounces)); }
-	public static function LbToTSt($pounds) { StToTSt(LbToSt($pounds)); }
-	public static function TToTSt($tons) { StToTSt(TToSt($tons)); }
+	public static function LbToLbOz($pounds) { return self::OzToLbOz(self::LbToOz($pounds)); }
+	public static function StToLbOz($stones) { return self::OzToLbOz(self::StToOz($stones)); }
+	public static function TToLbOz($tons) { return self::OzToLbOz(self::TToOz($tons)); }
+	public static function LbToStOz($pounds) { return self::OzToStOz(self::LbToOz($pounds)); }
+	public static function StToStOz($stones) { return self::OzToStOz(self::StToOz($stones)); }
+	public static function TToStOz($tons) { return self::OzToStOz(self::TToOz($tons)); }
+	public static function OzToStLb($ounces) { return self::LbToStLb(self::OzToLb($ounces)); }
+	public static function StToStLb($stones) { return self::LbToStLb(self::StToLb($stones)); }
+	public static function TToStLb($tons) { return self::LbToStLb(self::TToLb($tons)); }
+	public static function LbToTOz($pounds) { return self::OzToTOz(self::LbToOz($pounds)); }
+	public static function StToTOz($stones) { return self::OzToTOz(self::StToOz($stones)); }
+	public static function TToTOz($tons) { return self::OzToTOz(self::TToOz($tons)); }
+	public static function OzToTLb($ounces) { return self::LbToTLb(self::OzToLb($ounces)); }
+	public static function StToTLb($stones) { return self::LbToTLb(self::StToLb($stones)); }
+	public static function TToTLb($tons) { return self::LbToTLb(self::TToLb($tons)); }
+	public static function OzToTSt($ounces) { return self::StToTSt(self::OzToSt($ounces)); }
+	public static function LbToTSt($pounds) { return self::StToTSt(self::LbToSt($pounds)); }
+	public static function TToTSt($tons) { return self::StToTSt(self::TToSt($tons)); }
 }
