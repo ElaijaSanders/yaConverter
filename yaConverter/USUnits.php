@@ -210,7 +210,7 @@ class USUnits {
 		return $sqfeet;
 	} public static function SqFtToSqIn($sqfeet) {
 		$sqinches = $sqfeet * 144;
-		return $sqyards;
+		return $sqinches;
 	} public static function SqInToSqYd($sqinches) {
 		$sqyards = $sqinches / 1296;
 		return $sqyards;
