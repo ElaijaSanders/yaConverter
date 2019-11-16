@@ -2,8 +2,8 @@
 namespace yaConverter;
 
 class Length {
-  //Inches - feet, inches - yards, inches - miles
-  public static function InToFtIn($inches) {
+  	//Inches - feet, inches - yards, inches - miles
+  	public static function InToFtIn($inches) {
 		$feet = floor($inches / 12);
 		$inches = $inches % 12;
 		return array("feet" => $feet, "inches" => $inches);
@@ -83,8 +83,8 @@ class Length {
 		return self::MiYdToYd($miles, $yards);
 	}
   
-  //Double-stacked
-  public static function FtInToFt($feet, $inches = 0) { return self::InToFt(self::FtInToIn($feet, $inches)); }
+  	//Double-stacked
+  	public static function FtInToFt($feet, $inches = 0) { return self::InToFt(self::FtInToIn($feet, $inches)); }
 	public static function FtInToYd($feet, $inches = 0) { return self::InToYd(self::FtInToIn($feet, $inches)); }
 	public static function FtInToMi($feet, $inches = 0) { return self::InToMi(self::FtInToIn($feet, $inches)); }
 	public static function YdInToFt($yards, $inches = 0) { return self::InToFt(self::YdInToIn($yards, $inches)); }
