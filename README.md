@@ -1,6 +1,6 @@
 # yaConverter
 ![BuildStatus](https://img.shields.io/appveyor/ci/yaBobJonez/yaConverter)
-![CodeQuality](https://img.shields.io/scrutinizer/quality/g/yaBobJonez/yaConverter)
+![CodeQuality](https://img.shields.io/codefactor/grade/github/yaBobJonez/yaConverter)
 ![LastCommit](https://img.shields.io/github/last-commit/yaBobJonez/yaConverter)
 ![OpenIssues](https://img.shields.io/github/issues/yaBobJonez/yaConverter)
 ![Maintenance](https://img.shields.io/maintenance/yes/2025)
