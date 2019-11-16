@@ -8,11 +8,9 @@ class Length {
 		$inches = $inches % 12;
 		return array("feet" => $feet, "inches" => $inches);
 	} public static function InToFt($inches) {
-		$feet = $inches / 12;
-		return $feet;
+		return $inches / 12;
 	} public static function FtInToIn($feet, $inches = 0) {
-		$inches = ($feet * 12) + $inches;
-		return $inches;
+		return ($feet * 12) + $inches;
 	} public static function FtToIn($feet, $inches = 0) {
 		return self::FtInToIn($feet, $inches);
 	} public static function InToYdIn($inches) {
@@ -20,11 +18,9 @@ class Length {
 		$inches = $inches % 36;
 		return array("yards" => $yards, "inches" => $inches);
 	} public static function InToYd($inches) {
-		$yards = $inches / 36;
-		return $yards;
+		return $inches / 36;
 	} public static function YdInToIn($yards, $inches = 0) {
-		$inches = ($yards * 36) + $inches;
-		return $inches;
+		return ($yards * 36) + $inches;
 	} public static function YdToIn($yards, $inches = 0) {
 		return self::YdInToIn($yards, $inches);
 	} public static function InToMiIn($inches) {
@@ -32,11 +28,9 @@ class Length {
 		$inches = $inches % 63360;
 		return array("miles" => $miles, "inches" => $inches);
 	} public static function InToMi($inches) {
-		$miles = $inches / 63360;
-		return $miles;
+		return $inches / 63360;
 	} public static function MiInToIn($miles, $inches = 0) {
-		$inches = ($miles * 63360) + $inches;
-		return $inches;
+		return ($miles * 63360) + $inches;
 	} public static function MiToIn($miles, $inches = 0) {
 		return self::MiInToIn($miles, $inches);
 	}
@@ -47,23 +41,19 @@ class Length {
 		$feet = $feet % 3;
 		return array("yards" => $yards, "feet" => $feet);
 	} public static function FtToYd($feet) {
-		$yards = $feet / 3;
-		return $yards;
+		return $feet / 3;
 	} public static function FtToMiFt($feet) {
 		$miles = floor($feet / 5280);
 		$feet = $feet % 5280;
 		return array("miles" => $miles, "feet" => $feet);
 	} public static function FtToMi($feet) {
-		$miles = $feet / 5280;
-		return $miles;
+		return $feet / 5280;
 	} public static function MiFtToFt($miles, $feet = 0) {
-		$feet = ($miles * 5280) + $feet;
-		return $feet;
+		return ($miles * 5280) + $feet;
 	} public static function MiToFt($miles, $feet = 0) {
 		return self::MiFtToFt($miles, $feet);
 	} public static function YdFtToFt($yards, $feet = 0) {
-		$feet = ($yards * 3) + $feet;
-		return $feet;
+		return ($yards * 3) + $feet;
 	} public static function YdToFt($yards, $feet = 0) {
 		return self::YdFtToFt($yards, $feet);
 	}
@@ -74,11 +64,9 @@ class Length {
 		$yards = $yards % 1760;
 		return array("miles" => $miles, "yards" => $yards);
 	} public static function YdToMi($yards) {
-		$miles = $yards / 1760;
-		return $miles;
+		return $yards / 1760;
 	} public static function MiYdToYd($miles, $yards = 0) {
-		$yards = ($miles * 1760) + $yards;
-		return $yards;
+		return ($miles * 1760) + $yards;
 	} public static function MiToYd($miles, $yards = 0) {
 		return self::MiYdToYd($miles, $yards);
 	}
