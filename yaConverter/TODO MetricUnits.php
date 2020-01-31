@@ -114,7 +114,7 @@ class MetricUnits {
 		return $centimeters;
 	}
 	
-	//TODO: dm, m, km, NOW: DM - KM TODO^
+	//TODO: m - km
 	
 	//Decimeters - meters, decimeters - kilometers, meters - kilometers
 	public static function DmToMDm($decimeters) {
@@ -129,6 +129,19 @@ class MetricUnits {
 		return $decimeters;
 	} public static function MToDm($meters) {
 		$decimeters = $meters * 10;
+		return $decimeters;
+	} public static function DmToKmDm($decimeters) {
+		$kilometers = floor($decimeters / 10000);
+		$decimeters = $decimeters % 10000;
+		return array("kilometers" => $kilometers, "decimeters" => $decimeters);
+	} public static function DmToKm($decimeters) {
+		$kilometers = $decimeters / 10000;
+		return $kilometers;
+	} public static function KmDmToDm($kilometers, $decimeters) {
+		$decimeters = ($kilometers * 10000) + $decimeters;
+		return $decimeters;
+	} public static function KmToDm($kilometers) {
+		$decimeters = $kilometers * 10000;
 		return $decimeters;
 	}
 }
