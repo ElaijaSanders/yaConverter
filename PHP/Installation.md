@@ -9,7 +9,6 @@ If you use standard PHP:
 4. Add the following lines at the top of the file (under <?php):
 
 - include "yaConverter\USUnits.php";
-
 - use yaConverter\USUnits;
 
 If you use DevelNext IDE:
