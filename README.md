@@ -25,7 +25,7 @@ This function is not available yet, but a lot of others already do!
 Features:
 -----
 - [X] Easy to use classes and functions
-- [X] Both static and inherited methods
+- [X] Fast static methods
 - [ ] Multiple programming languages support
 - [X] Convert even one unit to two!
 - [X] Over 23 units currently supported
