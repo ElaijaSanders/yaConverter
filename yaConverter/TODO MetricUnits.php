@@ -114,8 +114,6 @@ class MetricUnits {
 		return $centimeters;
 	}
 	
-	//TODO: m - km
-	
 	//Decimeters - meters, decimeters - kilometers, meters - kilometers
 	public static function DmToMDm($decimeters) {
 		$meters = floor($decimeters / 10);
@@ -143,5 +141,35 @@ class MetricUnits {
 	} public static function KmToDm($kilometers) {
 		$decimeters = $kilometers * 10000;
 		return $decimeters;
+	} public static function MToKmM($meters) {
+		$kilometers = floor($meters / 1000);
+		$meters = $meters % 1000;
+		return array("kilometers" => $kilometers, "meters" => $meters);
+	} public static function MToKm($meters) {
+		$meters = $meters / 1000;
+		return $meters;
+	} public static function KmMToM($kilometers, $meters) {
+		$meters = ($kilometers * 1000) + $meters;
+		return $meters;
+	} public static function KmToM($kilometers) {
+		$meters = $kilometers * 1000;
+		return $meters;
+	}
+	
+	//MG, G, KG, TONNES
+	//Milligrams - Grams, Milligrams - Kilograms, Milligrams - Metric tonnes
+	public static function MgToGMg($milligrams) {
+		$grams = floor($milligrams / 1000);
+		$milligrams = $milligrams % 1000;
+		return array("grams" => $grams, "milligrams" => $milligrams);
+	} public static function MgToG($milligrams) {
+		$grams = $milligrams / 1000;
+		return $grams;
+	} public static function GMgToMg($grams, $milligrams) {
+		$milligrams = ($grams * 1000) + $milligrams;
+		return $milligrams;
+	} public static function GToMg($grams) {
+		$milligrams = $grams * 1000;
+		return $milligrams;
 	}
 }
