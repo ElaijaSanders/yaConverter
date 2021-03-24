@@ -1,4 +1,4 @@
-# yaConverter
+# yaConverter [ABANDONED]
 ![BuildStatus](https://img.shields.io/appveyor/ci/yaBobJonez/yaConverter)
 ![CodeQuality](https://img.shields.io/codefactor/grade/github/yaBobJonez/yaConverter)
 ![LastCommit](https://img.shields.io/github/last-commit/yaBobJonez/yaConverter)
