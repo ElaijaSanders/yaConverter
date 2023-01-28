@@ -44,18 +44,15 @@ How do I use it and what units are supported?
 -----
 1. Select the Branch you need
 2. See "Usage.md"
-Or check our wiki!
 
 Downloads:
 =====
 Click on the icon to download.
 - [![PHP](https://badgen.net/badge/PHP/0.9/green)](https://github.com/yaBobJonez/yaConverter/releases/tag/php)
-- [![PHP](https://badgen.net/badge/Java/Coming%20soon/red)](#)
 
 Credits:
 -----
-Please, credit all the authors if redistributing and/or modifying any part of the project.
-- ya_Bob_Jonez
+**EDIT THIS OR SMTH IDK**
 
 How can I help / collaborate?
 -----
